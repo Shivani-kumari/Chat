@@ -29,7 +29,7 @@ const ChatUser = ({ contact, active }) => {
     >
       <div className="chat__contact-avatar" className={classes.root}>
        
-        { active ? <Badge ><Avatar alt="Remy Sharp" src={contact.avatar} /></Badge>
+        { active ? <Badge ><Avatar alt={contact.name} src={contact.avatar} /></Badge>
         : <Badge badgeContent={contact.data} color="secondary" ><Avatar alt={contact.name} src={contact.avatar} /></Badge>
         }
         
